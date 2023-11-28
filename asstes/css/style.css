@@ -23,6 +23,7 @@
     --color-grey: #DDD;
     --color-dark-grey: #757575;
     --color-white: #FFF;
+    --background-color-input: #F5F5F5;
     --font-size-h1: 3.375rem;
     --font-size-logo1-ph: 1.5rem;
     --font-size-logo2: 0.75rem;
@@ -100,7 +101,7 @@ a {
     font-size: var(--font-size-zahl);
 }
 
-input::placeholder {
+input[type="email"] {
     font-family: Arial;
     color: var(--color-dark-greygrey);
     font-size: var(--font-size-logo1-ph);
@@ -279,4 +280,81 @@ header {
 
 .ready p {
     width: 30%;
+}
+
+.steps {
+    width: 100%;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20vh;
+}
+
+.steps img {
+    width: 50%;
+}
+
+.emoji {
+    width: 15%;
+}
+
+.stepsLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stepsRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    width: 70%;
+}
+
+/* !Footer */
+
+footer {
+    margin-bottom: 2vh;
+}
+
+footer div {
+    margin: 10% 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
+
+footer div p {
+    width: 30%;
+}
+
+footer input[type="email"] {
+    width: 30%;
+    padding: 1rem 2rem;
+    text-align: center;
+    border: none;
+    background-color: var(--background-color-input);
+}
+
+footer input[type="submit"] {
+    padding: 0.8rem 2rem;
+    border: none;
+    background-color: var(--color-pink);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer input[type="submit"]:hover {
+    background: linear-gradient(90deg, var(--color-pink), transparent) #2196f3;
+}
+
+.schlusstext {
+    margin-left: 10%;
 }
