@@ -27,8 +27,10 @@
     --font-size-logo1-ph: 1.5rem;
     --font-size-logo2: 0.75rem;
     --font-size-p1-h4: 1.125rem;
+    --line-height-p: 2;
     --font-size-a-p2: 0.875rem;
     --font-size-h2: 2.375rem;
+    --line-height-h2: 1.2;
     --font-size-h3: 1.75rem;
     --font-size-submit: 1.188rem;
     --font-size-zahl: 3.25rem;
@@ -46,6 +48,7 @@ h2 {
     font-family: 'Roboto-Bold';
     color: var(--font-color-black);
     font-size: var(--font-size-h2);
+    line-height: var(--line-height-h2);
 }
 
 h3 {
@@ -76,6 +79,7 @@ p {
     font-family: 'Roboto-Light';
     color: var(--font-color-black);
     font-size: var(--font-size-a-p2);
+    line-height: var(--line-height-p);
 }
 
 .headline p, .idea p {
@@ -165,4 +169,114 @@ header {
     flex-direction: column;
     gap: 5vh;
     margin-left: 30%;
+}
+
+/* !Main */
+
+/* Section 1 */
+
+.bilder {
+    width: 100%;
+    height: 100vh;
+}
+
+.bilder img {
+    width: 100%;
+    height: max-content;
+}
+
+/* Section 2 */
+
+.idea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    gap: 5%;
+}
+
+.idea p {
+    width: 50%;
+}
+
+.idea h2 {
+    width: 20%;
+}
+
+.challenge{
+    margin: 10% 0;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.challenge h2{
+    width: 50%;
+    margin-left: 15%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "ask think"
+    "design share";
+    margin: 0 10%;
+}
+
+.ask {
+    grid-area: ask;
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    position: relative;
+}
+
+.think {
+    grid-area: think;
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.design {
+    grid-area: design;
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.share {
+    grid-area: share;
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+
+/* Section 3 */
+
+.ready {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin: 10% 0;
+}
+
+.ready p {
+    width: 30%;
 }
