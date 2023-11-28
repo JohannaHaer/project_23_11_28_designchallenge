@@ -1,3 +1,5 @@
+/* Global Styling */
+
 @font-face {
     font-family: 'Roboto-Bold';
     src: url('../fonts/Roboto/Roboto-Bold.ttf');
@@ -12,6 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 :root {
@@ -30,6 +33,8 @@
     --font-size-submit: 1.188rem;
     --font-size-zahl: 3.25rem;
 }
+
+/* Global Font-Stylings */
 
 h1 {
     font-family: 'Roboto-Bold';
@@ -73,10 +78,16 @@ p {
     font-size: var(--font-size-a-p2);
 }
 
-.headLine p, .idea p {
+.headline p, .idea p {
     font-family: 'Roboto-Light';
     color: var(--font-color-black);
     font-size: var(--font-size-p1-h4);
+}
+
+a {
+    font-family: 'Roboto-Bold';
+    color: var(--color-pink);
+    font-size: var(--font-size-a-p2);
 }
 
 .zahl {
@@ -101,4 +112,57 @@ input[type="submit"] {
     font-family: 'Roboto-Light';
     color: var(--font-color-black);
     font-size: var(--font-size-p1-h4);
+}
+
+/* !Header */
+
+header {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.headerRechts {
+    height: 90%;
+    width: 60%;
+    background-image: url('../img/ilustracion1.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.headerRechts img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.headerLinks {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-between;
+}
+
+.headerLogo {
+    
+}
+
+.headerLogo img {
+    width: 1.5rem;
+    position: fixed;
+    margin: 2rem 2rem;
+}
+
+.headerTitel {
+    margin: 2rem 4rem;
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin-left: 30%;
 }
