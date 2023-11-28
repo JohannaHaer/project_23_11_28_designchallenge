@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto/Roboto-Light.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,5 +15,90 @@
 }
 
 :root {
-    
+    --font-color-black: #000;
+    --color-pink: #FF3571;
+    --color-grey: #DDD;
+    --color-dark-grey: #757575;
+    --color-white: #FFF;
+    --font-size-h1: 3.375rem;
+    --font-size-logo1-ph: 1.5rem;
+    --font-size-logo2: 0.75rem;
+    --font-size-p1-h4: 1.125rem;
+    --font-size-a-p2: 0.875rem;
+    --font-size-h2: 2.375rem;
+    --font-size-h3: 1.75rem;
+    --font-size-submit: 1.188rem;
+    --font-size-zahl: 3.25rem;
+}
+
+h1 {
+    font-family: 'Roboto-Bold';
+    color: var(--font-color-black);
+    font-size: var(--font-size-h1);
+}
+
+h2 {
+    font-family: 'Roboto-Bold';
+    color: var(--font-color-black);
+    font-size: var(--font-size-h2);
+}
+
+h3 {
+    font-family: 'Roboto-Bold';
+    color: var(--font-color-black);
+    font-size: var(--font-size-h3);
+}
+
+h4 {
+    font-family: 'Roboto-Bold';
+    color: var(--font-color-black);
+    font-size: var(--font-size-p1-h4);
+}
+
+.logo1 {
+    font-family: 'Roboto-Bold';
+    color: var(--font-color-black);
+    font-size: var(--font-size-logo1-ph);
+}
+
+.logo2 {
+    font-family: 'Roboto-Light';
+    color: var(--font-color-black);
+    font-size: var(--font-size-logo2);
+}
+
+p {
+    font-family: 'Roboto-Light';
+    color: var(--font-color-black);
+    font-size: var(--font-size-a-p2);
+}
+
+.headLine p, .idea p {
+    font-family: 'Roboto-Light';
+    color: var(--font-color-black);
+    font-size: var(--font-size-p1-h4);
+}
+
+.zahl {
+    font-family: 'Roboto-Bold';
+    color: var(--color-grey);
+    font-size: var(--font-size-zahl);
+}
+
+input::placeholder {
+    font-family: Arial;
+    color: var(--color-dark-greygrey);
+    font-size: var(--font-size-logo1-ph);
+}
+
+input[type="submit"] {
+    font-family: Arial;
+    color: var(--color-white);
+    font-size: var(--font-size-submit);
+}
+
+.schlusstext {
+    font-family: 'Roboto-Light';
+    color: var(--font-color-black);
+    font-size: var(--font-size-p1-h4);
 }
