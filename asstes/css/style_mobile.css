@@ -1,6 +1,79 @@
 @media only screen and (max-width: 600px) {
 
     html {
-        font-size: 10px;
+        font-size: 12px;
+    }
+
+    .headline {
+        left: 10%;
+    }
+
+    .logo {
+        left: 1rem;
+        top: 1rem;
+    }
+
+    .image {
+        height: 20vh;
+        object-fit: contain;
+    }
+
+    /* Section 1 */
+
+    .sec1 {
+        margin: 10vh 10vw;
+        flex-direction: column;
+    }
+    
+    .sec1 h2 {
+        width: 100%;
+    }
+
+    .sec1 p {
+        width: 100%;
+    }
+
+    /* Section 2 */
+
+    .sec2 {
+        margin: 10vh 10vw;
+    }
+
+    .sec2 h2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .sec2Challenge {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, max-content);
+        grid-template-areas: 
+        "ask" 
+        "think"
+        "design" 
+        "share";
+        gap: 3rem;
+    }
+
+    .sec2Challenge article {
+        flex-direction: column;
+        width: 70vw;
+    }
+
+    /* Section 3 */
+
+    .sec3 {
+        margin: 15vh 0;
+    }
+
+    .sec3 p {
+        width: 50vw;
+    }
+
+    /* Section 4 */
+
+    .sec4Img {
+        width: 35vw;
     }
 }
